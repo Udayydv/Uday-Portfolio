@@ -1,0 +1,106 @@
+/* ProjectDetailStyles.module.css */
+.cardContainer {
+    max-width: 900px;
+    margin: 3rem auto;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ff7a18, #af002d);
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  .backButton {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity .2s;
+  }
+  .backButton:hover { opacity: 0.8; }
+  
+  .title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .githubButton {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .2s;
+  }
+  .githubButton:hover { background: rgba(255,255,255,0.3); }
+  
+  .cardBody {
+    padding: 2rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .techBadge {
+    background: #f0f0f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .imageWrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s;
+  }
+  .imageWrapper:hover {
+    transform: translateY(-5px);
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .notFound {
+    text-align: center;
+    margin: 4rem 0;
+    color: #999;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .cardHeader {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .githubButton {
+      order: 2;
+    }
+  }
+  
